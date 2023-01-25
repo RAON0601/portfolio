@@ -10,6 +10,7 @@
   background-color: #fff;
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  z-index: 900;
 }
 
 .navigation {
@@ -43,11 +44,13 @@
     }
 
     :hover {
-      color: orange;
+      color: #0a2647;
+      font-weight: 700;
     }
 
     :active {
-      color: orangered;
+      color: #001220;
+      font-weight: bold;
     }
   }
 }

@@ -1,0 +1,92 @@
+$btn_color: rgb(0, 51, 124);
+
+.intro {
+  position: relative;
+  background-image: url("/background.svg");
+  background-repeat: no-repeat; // background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다.
+  background-size: cover; // 사이즈가 container에 맞지 않아도 꽉 차도록 채운다.
+  background-position: center; // background-image가 컨테이너에 가운데로 오도록 한다.
+}
+
+.line {
+  margin: 1.5rem 0;
+}
+
+.name {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 1.5rem 0;
+}
+
+.position {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.intro-detail {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+  padding: 8px 0;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: $btn_color;
+  border: 2px solid $btn_color;
+  border-radius: 0.6em;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+    background-color: ligthen($btn_color, 10%);
+  }
+
+  &:hover {
+    box-shadow: 0 0 40px 40px $btn_color inset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-detail {
+    font-size: 1.125rem;
+  }
+}
+
+// .btn-more {
+//   display: block;
+//   background-color: #205295;
+//   color: white;
+//   margin: 0 auto;
+
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }

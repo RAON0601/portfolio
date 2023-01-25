@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav className={`${styles.navigation}`}>
+      <nav className={styles.navigation}>
         <Link href="/" className={styles["brand-name"]}>
           KJM Protfolio
         </Link>

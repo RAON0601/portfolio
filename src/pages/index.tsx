@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Intro from "@/components/Intro";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>메인</main>
+      <main>
+        <Intro />
+      </main>
       <footer>푸터</footer>
     </>
   );
