@@ -1,0 +1,21 @@
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.link-icon {
+  &:hover {
+    cursor: pointer;
+    color: darken($color: #000000, $amount: 0);
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Black Han Sans, sans-serif;
+  text-decoration: underline;
+  margin-right: 52.5px;
+}

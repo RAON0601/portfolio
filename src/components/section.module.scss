@@ -1,0 +1,13 @@
+.content-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  max-width: 75rem;
+  margin: 0 auto;
+}

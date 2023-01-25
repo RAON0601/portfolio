@@ -1,6 +1,13 @@
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Head from "next/head";
+import Section from "@/components/Section";
+import AboutInfo from "@/components/AboutInfo";
+import { BsFillPersonFill } from "react-icons/bs";
+import { FaBirthdayCake, FaMapMarker } from "react-icons/fa";
+import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
+import { IoMdSchool } from "react-icons/io";
+import { RiMapPinLine } from "react-icons/ri";
 
 export default function Home() {
   return (
@@ -14,6 +21,53 @@ export default function Home() {
       <Header />
       <main>
         <Intro />
+        <Section id="About" title="About Me">
+          <AboutInfo
+            icon={<BsFillPersonFill size={50} />}
+            label="이름"
+            field="김정민"
+          />
+          <AboutInfo
+            icon={<FaBirthdayCake size={50} />}
+            label="생년월일"
+            field="98.06.01"
+          />
+          <AboutInfo
+            icon={<RiMapPinLine size={50} />}
+            label="주소지"
+            field="안양시 만안구"
+          />
+          <AboutInfo
+            icon={<AiFillPhone size={50} />}
+            label="연락처"
+            field="010-5307-2040"
+          />
+          <AboutInfo
+            icon={<AiOutlineMail size={50} />}
+            label="이메일"
+            field="jungmini0601@gmail.com"
+          />
+          <AboutInfo
+            icon={<IoMdSchool size={50} />}
+            label="학력"
+            field="대림대학교 (컴퓨터정보학부)"
+          />
+        </Section>
+        <Section
+          id="Skills"
+          title="Skills"
+          style={{ backgroundColor: "#82AAE3" }}
+        >
+          asdf
+        </Section>
+
+        <Section id="Archive" title="Archive">
+          asdf
+        </Section>
+
+        <Section id="Projects" title="Projects">
+          asdf
+        </Section>
       </main>
       <footer>푸터</footer>
     </>

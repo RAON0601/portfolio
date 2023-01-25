@@ -1,0 +1,28 @@
+.info {
+  display: flex;
+  align-items: center;
+  min-width: 400px;
+  padding: 2rem;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: 400px;
+  padding: 8px 12px;
+}
+
+.field {
+  font-size: 1.25rem;
+  padding: 8px 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .label,
+  .field {
+    padding: 4px 12px;
+  }
+
+  .info {
+    padding: 1rem;
+  }
+}
