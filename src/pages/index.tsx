@@ -4,10 +4,19 @@ import Head from "next/head";
 import Section from "@/components/Section";
 import AboutInfo from "@/components/AboutInfo";
 import { BsFillPersonFill } from "react-icons/bs";
-import { FaBirthdayCake, FaMapMarker } from "react-icons/fa";
+import { FaBirthdayCake, FaReact, FaAws, FaDocker } from "react-icons/fa";
 import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 import { IoMdSchool } from "react-icons/io";
 import { RiMapPinLine } from "react-icons/ri";
+import { DiCss3, DiHtml5, DiJava } from "react-icons/di";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiSpringboot,
+  SiNextdotjs,
+  SiMysql,
+} from "react-icons/si";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -21,6 +30,7 @@ export default function Home() {
       <Header />
       <main>
         <Intro />
+
         <Section id="About" title="About Me">
           <AboutInfo
             icon={<BsFillPersonFill size={50} />}
@@ -53,12 +63,120 @@ export default function Home() {
             field="대림대학교 (컴퓨터정보학부)"
           />
         </Section>
+
         <Section
           id="Skills"
           title="Skills"
           style={{ backgroundColor: "#82AAE3" }}
         >
-          asdf
+          <Card
+            header={
+              <div>
+                <DiHtml5 size={50} fill={"#E45527"} />
+                <DiCss3 size={50} fill={"#0077C3"} />
+              </div>
+            }
+            body={
+              <div>
+                <h5>HTML5 CSS3</h5>
+                <p>Semantic 마크업을 준수하기 위해 노력합니다.</p>
+                <p>flex와 Position을 이용하여 레이아웃을 작업합니다.</p>
+                <p>반응형 페이지를 만들 수 있습니다.</p>
+              </div>
+            }
+          />
+
+          <Card
+            header={
+              <div>
+                <SiJavascript size={50} fill={"#EF7E23"} />
+                <SiTypescript size={50} fill={"#2F74C0"} />
+              </div>
+            }
+            body={
+              <div>
+                <h5>JavaScript TypeScript</h5>
+                <p>JavaScript를 이용해 UI개발에 활용할 수 있습니다.</p>
+                <p>JavaScript를 활용해 크롤러 개발을 한 경험이 있습니다.</p>
+                <p>간단한 수준의 TypeScript 코드를 사용할 수 있습니다.</p>
+              </div>
+            }
+          />
+
+          <Card
+            header={
+              <div>
+                <FaReact size={50} fill={"#5ED3F3"} />
+                <SiNextdotjs size={50} fill={"black"} />
+              </div>
+            }
+            body={
+              <div>
+                <h5>React Nextjs</h5>
+                <p>리액트를 활용하여 UI개발을 할 수 있습니다.</p>
+                <p>CSR, SSR의 차이를 이해하고 개발 할 수 있습니다.</p>
+              </div>
+            }
+          />
+
+          <Card
+            header={
+              <div>
+                <DiJava size={50} fill={"#E92125"} />
+                <SiSpringboot size={50} fill={"#5CB230"} />
+              </div>
+            }
+            body={
+              <div>
+                <h5>Java SpringBoot</h5>
+                <p>
+                  Java, Spring Boot를 사용하여 SNS API개발한 경험이 있습니다.
+                </p>
+              </div>
+            }
+          />
+
+          <Card
+            header={
+              <div>
+                <SiMysql size={100} fill={"#005E87"} />
+              </div>
+            }
+            body={
+              <div>
+                <h5>MySQL8</h5>
+                <p>간단한 수준의 테이블 설계 경험이 있습니다.</p>
+                <p>
+                  프로그래머스 SQL 고득점 Kit의 모든 문제 풀이 가능한 수준의 SQL
+                  작성 능력을 가지고 있습니다.
+                </p>
+              </div>
+            }
+          />
+
+          <Card
+            header={
+              <div>
+                <FaAws size={50} fill="black" />
+                <FaDocker size={50} fill={"#006BC0"} />
+              </div>
+            }
+            body={
+              <div>
+                <h5>AWS</h5>
+                <p>
+                  EC2를 활용하여 node 및 java 서버를 배포한 경험이 있습니다.
+                </p>
+                <p>
+                  S3와 RDS를 사용하여 프로젝트 인프라를 구축한 경험이 있습니다.
+                </p>
+                <p>
+                  Github Actions와 Docker를 이용하여 CI/CD 파이프라인을 구축한
+                  경험이 있습니다.
+                </p>
+              </div>
+            }
+          />
         </Section>
 
         <Section id="Archive" title="Archive">
