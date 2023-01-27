@@ -17,6 +17,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 import Card from "@/components/Card";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -67,7 +68,7 @@ export default function Home() {
         <Section
           id="Skills"
           title="Skills"
-          style={{ backgroundColor: "#82AAE3" }}
+          style={{ backgroundColor: "#8EA7E9" }}
         >
           <Card
             header={
@@ -179,8 +180,63 @@ export default function Home() {
           />
         </Section>
 
-        <Section id="Archive" title="Archive">
-          asdf
+        <Section
+          id="Archive"
+          title="Archive"
+          style={{ backgroundColor: "#E5E0FF" }}
+        >
+          <a
+            href="https://github.com/RAON0601"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Card
+              header={
+                <div>
+                  <Image
+                    src="/github.jpg"
+                    alt="깃허브 이미지"
+                    width={200}
+                    height={150}
+                  />
+                </div>
+              }
+              body={
+                <div>
+                  <h5>개인 소스코드 저장소</h5>
+                  <p>프로그래밍 연습을 위한 코드</p>
+                  <p>토이 프로젝트 코드</p>
+                </div>
+              }
+            />
+          </a>
+
+          <a
+            href="https://blog.naver.com/rao-n"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Card
+              header={
+                <div>
+                  <Image
+                    src="/naverblog.png"
+                    alt="네이버 블로그 이미지"
+                    width={200}
+                    height={150}
+                  />
+                </div>
+              }
+              body={
+                <div>
+                  <h5>기술 블로그</h5>
+                  <p>간단한 프로젝트 진행 후기</p>
+                  <p>라이브러리 프레임 워크 사용 경험</p>
+                  <p>개인적인 공부 내용 정리</p>
+                </div>
+              }
+            />
+          </a>
         </Section>
 
         <Section id="Projects" title="Projects">
