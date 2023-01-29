@@ -18,6 +18,7 @@ import {
 } from "react-icons/si";
 import Card from "@/components/Card";
 import Image from "next/image";
+import Project from "@/components/Project";
 
 export default function Home() {
   return (
@@ -197,7 +198,7 @@ export default function Home() {
                     src="/github.jpg"
                     alt="깃허브 이미지"
                     width={200}
-                    height={150}
+                    height={112}
                   />
                 </div>
               }
@@ -223,7 +224,7 @@ export default function Home() {
                     src="/naverblog.png"
                     alt="네이버 블로그 이미지"
                     width={200}
-                    height={150}
+                    height={200}
                   />
                 </div>
               }
@@ -238,12 +239,7 @@ export default function Home() {
             />
           </a>
         </Section>
-
-        <Section id="Projects" title="Projects">
-          asdf
-        </Section>
       </main>
-      <footer>푸터</footer>
     </>
   );
 }
